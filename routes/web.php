@@ -66,4 +66,10 @@ Route::get('myself/{name}/{bb}/{age}',function($a,$bb,$tb) {
     tinggi badan : $tb <br>
     bmi : $bmi <br>
     ket : $ket";
+    
 }); 
+
+// route opsional parameter 
+route::get('myname/{name?}',function($a = "surya"){
+    return "hello $a";
+});
